@@ -1,9 +1,4 @@
-// this program is to make random messages
-
-// a place where the random messages is held
-let catagory = '';
-let message = '';
-let reps = '';
+// this program is to make random messages basketball training messages
 
 // making the object to hold the arrays of data
 
@@ -16,3 +11,21 @@ const arrHolder = {
     Passing: ['bounce pass', 'lob pass', 'bullet pass', 'no look pass'],
   },
 }
+
+// this generates a random peice of data, the catagorey an the reps
+
+const ranCatagory = () => {
+    let ranIndex = Math.floor(Math.random() * 3);
+    let item = arrHolder.catagory[ranIndex]
+    return item
+}
+
+const ranReps = () => {
+    let ranIndex = Math.floor(Math.random() * 3);
+    let item = arrHolder.reps[ranIndex]
+    return item
+}
+
+// now depending on what catagory pops up we need that message to populate
+
+console.log(ranReps())
