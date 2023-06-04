@@ -30,7 +30,7 @@ const randomMessage = () => {
 const ranReps = () => {
     let ranNum = Math.floor(Math.random() * arrHolder.reps.length)
     let reps = arrHolder.reps[ranNum]
-    return `${randomMessage()} for ${reps}X`
+    return `In this trianing session you will be doing ${randomMessage()} for ${reps}X`
 }
 console.log(ranReps())
 
